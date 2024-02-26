@@ -30,7 +30,7 @@ export const NotePage = () => {
 
   return (
     <div>
-      <p>{note?.body}</p>
+      <h3>{note?.body}</h3>
     </div>
   );
 };

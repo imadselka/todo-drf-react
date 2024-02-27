@@ -15,7 +15,11 @@ export const NotesListPage = () => {
   };
 
   return (
-    <div className="note">
+    <div className="notes">
+      <div className="notes-header">
+        <h2 className="notes-title">&#9782; Notes</h2>
+        <p className="notes-count">{notes.length}</p>
+      </div>
       <h1>Notes</h1>
       {notes.map((note) => {
         return <ListItem key={note.id} note={note} />;
